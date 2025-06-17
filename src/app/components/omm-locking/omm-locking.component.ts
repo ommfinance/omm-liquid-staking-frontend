@@ -351,10 +351,11 @@ export class OmmLockingComponent extends BaseClass implements OnInit, OnDestroy 
   }
 
   userHasOmmUnlocked(): boolean {
+    return true;
     // if user locked Omm is greater than zero and end timestamp has passed return true
-    return this.userLockedOmm
-      ? this.userLockedOmm.amount.gt(0) && this.userLockedOmm.end.lt(timestampNowMicroseconds())
-      : false;
+    // return this.userLockedOmm
+    //   ? this.userLockedOmm.amount.gt(0) && this.userLockedOmm.end.lt(timestampNowMicroseconds())
+    //   : false;
   }
 
   shouldHideLockedOmmThreshold(): boolean {

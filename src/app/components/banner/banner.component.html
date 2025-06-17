@@ -1,9 +1,12 @@
 <div [ngStyle]="!showBanner | hide"  class="banner">
   <div class="grid grid-center">
     <div class="grid-cell">
-      <p class="label" #bannerContent>
-        Omm has retired the money markets and is now a <a href="https://docs.omm.finance/liquid-staking-pivot" target="_blank">liquid staking protocol</a>. To withdraw your money from the markets, go to <a href="https://markets.omm.finance/" target="_blank">markets.omm.finance</a>
-      </p>
+      <div class="label" #bannerContent>
+      <p class="label"><a href="https://forum.icon.community/t/soda-xchange-sodax-icon-s-next-chapter/3992">The ICON blockchain is closing down</a>, so Omm will be taken offline at the end of 2025. Withdraw your OMM from the Vote page as soon as possible.</p>
+      <br>
+      <p class="label">If you still have funds in the money markets, visit <a href="https://markets.omm.finance/">markets.omm.finance</a> to withdraw them.</p>
+      </div>
+
     </div>
     <div class="grid-cell text-right close">
       <a href="javascript:void(0);" (click)="onBannerExitClick()">

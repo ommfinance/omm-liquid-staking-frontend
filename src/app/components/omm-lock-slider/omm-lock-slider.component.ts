@@ -149,10 +149,10 @@ export class OmmLockSliderComponent implements OnInit, OnDestroy {
       const value = +values[handle];
 
       // forbid slider value going below users locked Omm balance
-      if (value < this.userLockedOmmBalance) {
-        this.setSliderValue(this.userLockedOmmBalance);
-        return;
-      }
+      // if (value < this.userLockedOmmBalance) {
+      //   this.setSliderValue(this.userLockedOmmBalance);
+      //   return;
+      // }
 
       this.sliderValueUpdate.emit(value);
     });
